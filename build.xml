@@ -1,0 +1,22 @@
+<project name="firstproject" default="target3">
+
+    <target name="target1">
+    
+       <echo>thisi the target1 </echo>
+    
+    </target>
+    
+    <target name="target2" depends="target1">
+    
+       <echo> this is the target2 </echo>
+    
+    </target>
+    
+    <target name="target3" depends="target2">
+    
+       <echo> this is the target3 </echo>
+    
+    </target>
+    
+</project>
+
